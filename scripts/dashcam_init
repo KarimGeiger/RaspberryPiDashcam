@@ -1,0 +1,21 @@
+#! /bin/sh
+# /etc/init.d/dashcam
+
+DASHPATH=/mnt/dashcam
+
+case "$1" in
+  start)
+    echo "Starting dashcam"
+    bash $DASHPATH
+    ;;
+  stop)
+    echo "Stopping dashcam"
+    killall dashcam
+    ;;
+  *)
+    echo "Usage: /etc/init.d/dashcam {start|stop}"
+    exit 1
+    ;;
+esac
+
+exit 0
