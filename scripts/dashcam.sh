@@ -4,23 +4,7 @@
 # Feel free to copy it somewhere else but then you have to adjust the init-script.
 
 # VARIABLES
-DEBUG=1 # 0 = false; 1 = true
-
-SERVER_SCRIPT=1 # 0 = disable server; 1 = enable server (see /mnt/server for configuration)
-SERVER_SCRIPT_PATH="/mnt/server"
-
-VIDEO_PATH="/mnt/stream/"
-PERMANENT_PATH="/mnt/perm/"
-
-SAVEFILE="/mnt/saveme"
-
-REAR_TAIL="_rear.avi"
-FRONT_TAIL="_front.mpeg"
-
-VIDEO_LENGTH=600 # 10 minutes
-GPS_TRACKING_INTERVAL=15 #seconds
-
-MINIMAL_FREE_SPACE="1048576" # 1 gb in kb
+source /etc/dashcam.cfg
 
 # CALLS
 CAPTURE_REAR="echo ffmpeg -f video4linux2 -s 320x240 -t ${VIDEO_LENGTH} -i /dev/video0 ${VIDEO_PATH}"

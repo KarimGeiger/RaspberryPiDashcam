@@ -2,12 +2,7 @@
 #
 # Server-Script to communicate with Server and App
 
-# VARIABLES
-SERVER_DOMAIN="example.com" # domain and path only, don't add http/https!
-SERVER_SECRET="secret" # server secret as configured in server script
-SERVER_PROTOCOL="http" # http or https
-
-SAVEFILE="/mnt/saveme"
+source /etc/dashcam.cfg
 
 # DON'T CHANGE ANYTHING AFTER THIS LINE
 SERVER_BASE_URL="${SERVER_PROTOCOL}://${SERVER_DOMAIN}/?secret=${SERVER_SECRET}"
