@@ -5,7 +5,7 @@ echo "Installing.."
 
 cp dashcam_init /etc/init.d/dashcam
 chmod 755 /etc/init.d/dashcam
-cp dashcam /mnt/
+cp dashcam.sh /mnt/dashcam
 chmod +x /mnt/dashcam
 update-rc.d dashcam defaults
 mkdir /mnt/stream /mnt/perm

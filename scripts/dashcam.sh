@@ -1,7 +1,10 @@
 #! /bin/bash
+#
+# To make the init-script work properly don't rename this file and copy it to /mnt.
+# Feel free to copy it somewhere else but then you have to adjust the init-script.
 
 # VARIABLES
-DEBUG=1
+DEBUG=1 # 0 = false; 1 = true
 
 VIDEO_PATH="/mnt/stream/"
 PERMANENT_PATH="/mnt/perm/"
