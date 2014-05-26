@@ -6,6 +6,9 @@
 # VARIABLES
 DEBUG=1 # 0 = false; 1 = true
 
+SERVER_SCRIPT=1 # 0 = disable server; 1 = enable server (see /mnt/server for configuration)
+SERVER_SCRIPT_PATH="/mnt/server"
+
 VIDEO_PATH="/mnt/stream/"
 PERMANENT_PATH="/mnt/perm/"
 
