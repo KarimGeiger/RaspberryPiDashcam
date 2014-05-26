@@ -32,7 +32,7 @@ function getAndRemoveSaveFlag() {
     $saveflag = file_get_contents(__DIR__ . SAVE_FILE);
     file_put_contents(__DIR__ . SAVE_FILE, '0');
 
-    if (strpos($saveflag, 1) !== false) {
+    if (strpos($saveflag, '1') !== false) {
         return true;
     }
     return false;
